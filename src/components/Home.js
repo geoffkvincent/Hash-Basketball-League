@@ -28,7 +28,7 @@ class Home extends React.Component {
         <div className="home-grid">
           {teamNames.map((id) => (
             <Link key={id} to={`/${id}`}>
-              <TeamLogo />
+              <TeamLogo id={id} width='125px'/>
             </Link>
           ))}
         </div>
